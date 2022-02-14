@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      .box {
+       background-color: rgb(0, 0, 0, 0.5);
+      }
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        text-shadow: 2px 2px  rgba(0, 0, 0, 0.5);
+      }
+      body {
+        text-align: center;
+        background-image: url(img2.jpg); 
+        background-size: cover;
+      }
+      .back {
+        background-color: rgb(0, 0, 0, 0.5);
+      }
+    </style>
+<script>
+  function myFunction() {
+    var txt;
+    if (confirm("Details Saved!")) {
+      txt = "You pressed OK!";
+    } else {
+      txt = "You pressed Cancel!";
+    }
+    document.getElementById("demo").innerHTML = txt;
+  }
+  </script>
+</head>
+<body>
+  <main>
+    <div class="box">
+        <h1>Student Detail Form </form></h1>
+    </div>
+    <div class="back">
+  <form>
+     <label>First Name <input type="text" placeholder="Enter your name"></label>
+     <label>Last Name <input type="text" placeholder="Enter your name"></label><br>
+     <label>Gender:</label>
+     <label><input type="radio" name="gender" >Male</label>
+     <label><input type="radio" name="gender" >Female</label>
+     <label><input type="radio" name="gender" >Other</label><br>
+     <label><strong>Subjects to choose</strong></label><br>
+     <label><input type="checkbox" name="Place">Bilogy</label><br>
+     <label><input type="checkbox" name="Place">Mathematics</label><br>
+     <label><input type="checkbox" name="Place">Physics</label><br>
+     <label><input type="checkbox" name="Place">Chemestry</label><br>
+     <label><input type="checkbox" name="Place">Hindi</label><br>
+     <label><input type="checkbox" name="Place">English</label><br><br>
+     <label><b>Enter Your Address</b></label><br>
+     <textarea rows="10" cols="50" placeholder="Write your Address" ></textarea><br>
+     <button onclick="myFunction()">Submmit</button>
+  </form>  
+</div>
+  </main>
+</body>
+</html>
